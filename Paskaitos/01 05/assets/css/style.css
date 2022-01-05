@@ -1,0 +1,21 @@
+form {
+    background-color: rgb(197, 81, 81);
+   }
+
+.background {
+   background-color: rgb(83, 12, 12);   
+}
+.formbackground {background-color: rgb(12, 6, 6);  
+}
+.overridebackground {
+   background-color: green !important;
+
+}
+#bg { background-color: slateblue;
+
+}
+.img { 
+    border: 4px solid black;
+    width: 150px;
+    height: 150px;
+}
