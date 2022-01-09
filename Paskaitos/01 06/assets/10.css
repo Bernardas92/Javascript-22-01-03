@@ -9,18 +9,17 @@ body {
 }
 .content{  text-align: center;
 }
-table { 
-  border: 3px solid rgb(0, 0, 0);
-}
 h1 {
    text-align: center;
 }
-td { padding: 10px 10px 10px 10px; 
-   position: center;
-
+.border { text-align: center;
+   margin-top: 10%;
+   border: 3px solid black;
+   width: 35%;
+   background:linear-gradient(to bottom right, #f69d3c, #3f87a6);
+   margin-left: 35%;
+   padding: 25px;
 }
-tbody {
-   position: center;
-   border: 3px solid rgb(0, 0, 0);
+.align { position: center;
 }
 
