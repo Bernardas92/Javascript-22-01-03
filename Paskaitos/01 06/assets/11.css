@@ -1,0 +1,18 @@
+header {text-align: center;
+}
+body { 
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+
+}
+.left {text-align: left; 
+    color:blue;
+}
+ .right {text-align: right; 
+    color:rgb(33, 187, 33);
+}
+.center {text-align: center; 
+    color:rgb(190, 88, 20);
+}
+.justify {text-align: justify; 
+    color:rgb(78, 6, 48);
+}
