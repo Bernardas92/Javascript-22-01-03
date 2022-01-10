@@ -1,0 +1,90 @@
+    .spacer {
+    height: 300px;
+    background: linear-gradient(#3f87a6, #ebf8e1, #f69d3c);
+    width: 100%;
+    }
+        .spacer1 {
+        height: 300px;
+        background: linear-gradient(#2a424d, #a7e974, #af610d);
+        width: 100%;
+         }
+            .spacer2 {
+            height: 300px;
+            background: linear-gradient(#2e5261, #1f3310, #241505);
+            width: 100%;
+            }
+                .spacer3 {
+                height: 300px;
+                background: linear-gradient(#2e373b, #abc598, #f0bc84);
+                width: 100%;
+                }
+    body {
+        margin: auto;   
+    }
+    .demo {
+        height: 100vh;
+        background: linear-gradient( 0.25turn, #a77c4f, #122207, #3f87a6);
+        width: 100%;
+    }
+    .demo1 {
+        height: 100vh;
+        background: linear-gradient( 0.25turn, #694013, #414240, #24607a);
+        width: 100%;
+    }
+    .demo2 {
+        height: 100vh;
+        background: linear-gradient( 0.25turn, #523e28, #7f9171, #6bc7ee);
+        width: 100%;
+    }
+    .demo3 {
+        height: 100vh;
+        background: linear-gradient( 0.25turn, #e29e54, #839674, #05374d);
+        width: 100%;
+    }
+
+    img { 
+        width: 100%;
+        max-width: 250px;
+        float: left;
+        margin: 0 15px 0 20px ;
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgb(247, 244, 244);
+        background-image: linear-gradient(to top left,
+                                          rgba(0, 0, 0, .2),
+                                          rgba(0, 0, 0, .2) 30%,
+                                          rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(201, 199, 199, 0.6),
+                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
+    .container {
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right {
+        float: right;
+        margin: 0 0 15px 20px
+
+    }
+    .section::before,
+    .section::after {
+    content: "";
+    display: table;
+    clear:both;
+    }
+    .navigation {
+        border: solid 2px;
+
+    }
+    * {
+    box-sizing: border-box;
+}
+
