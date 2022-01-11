@@ -1,0 +1,30 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.customlist {
+    display: list-item;
+    list-style-type:unset;
+}
+div {
+    list-style-type: unset;
+}
+nav {
+    background: rgb(79, 161, 182);
+}
+nav li {
+    display: inline-block;
+    border-right: 1px solid bisque;
+}
+
+nav li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:rgb(148, 75, 93);
+    font-family: 'Open Sans', sans-serif;
+}
+nav li a:hover {
+color: white;
+background:rgb(32, 3, 11)
+}
