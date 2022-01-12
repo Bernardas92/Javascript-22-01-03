@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+header nav {
+    position: fixed;
+    width: 100%;
+    background: rgb(239, 247, 205);
+}
+
+header nav li {
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+header nav li a {
+    display: block;
+    padding: 20px 30px;
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav li a:hover {
+    background: rgb(170, 175, 247);
+    color: #fff;
+}
+
+section.sekcija {
+    height: 100vh;
+}
+section.sekcija1 {
+    background: rgb(237, 252, 172);
+    text-align: left;
+   padding-top: 150px;
+}
+section.sekcija2 {
+    background: rgb(250, 214, 214);
+    text-align: left;
+   padding-top: 150px;
+}
+h1 {
+    text-align: center;
+}

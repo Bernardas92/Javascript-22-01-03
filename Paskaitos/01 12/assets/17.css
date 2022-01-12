@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    background: rgb(236, 236, 236);
+}
+
+header nav li {
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+
+header nav li a {
+    display: block;
+    padding: 20px 30px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav li a:hover {
+    background: rgb(139, 0, 116);
+    color: #fff;
+}
+
+section.sekcija {
+    height: 100vh;
+}
+
+section.sekcija1 {
+   
+    background-image: url('../img/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+}
+
+section.sekcija2 {
+    
+    background-image: url('../img/2.jpg');
+    background-repeat: no-repeat;
+    /* Individualus pozicijos uzrasymas x ir y reiksmems 
+    background-position-x: 100px;
+    background-position-y: 200px;
+    background-position: 100px 200px;
+    background-size: 1600px 3600px; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.sekcija3 {
+    
+    background-image: url('../img/3.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-size: 400px 200px;
+}
+
+section.sekcija4 {
+    
+    background-image: url('../img/4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-size: 300px 170px;
+    background-position-x: 50px;
+    background-position-y: 50px;
+}
+
+section.sekcija5 {
+   
+    background-image: url('../img/5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.sekcija6 {
+
+    background-image: url('../img/6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-size: 300px 170px;
+    background-position-x: 400px;
+    background-position-y: 500px;
+}
+
+section.sekcija7 {
+   
+    background-image: url('../img/7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 700px 500px;
+    background-position-x: 500px;
+    background-position-y: 100px;
+}
+
+
+section.sekcija h1 {
+    margin: 0;
+    font-size: 50px;
+    padding-top: calc((100vh - 50px) / 2);
+    text-align: center;
+}
+
+section.sekcija5 h1 {
+    color: rgb(255, 255, 255);
+}
+
+section.sekcija .innerPadding {
+    padding: 10% 10% 0 10%;
+    font-size: 22px;
+    color:white;
+}
+
+section.sekcija .contactForm {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+    color:rgb(0, 0, 0);
+    background-image: url('../img/9.jpg');
+    background-position-x: 500px;
+    background-position-x: 600px;
+    background-size: cover;
+}
+
+section.sekcija .contactForm h2 {
+    font-size: 55px;
+}
+
+section.sekcija .contactForm input.textInput {
+    width: 450px;
+    border: 1px solid rgb(175, 121, 121);
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+section.sekcija .contactForm textarea.deliveryComments {
+    width: 450px;
+    border: 1px solid rgb(175, 121, 121);
+    height: 200px;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+section.sekcija .contactForm button.submitButton {
+    border: none;
+    width: 250px;
+    height: 45px;
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        background-color: rgb(145, 221, 240);
+        background-image: linear-gradient(to top left,
+                                          rgba(0, 0, 0, .2),
+                                          rgba(0, 0, 0, .2) 30%,
+                                          rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+section.sekcija .contactForm button.submitButton:hover {
+    background-color: rgb(245, 168, 168);
+    color:bisque;
+    cursor: pointer;
+}
+section.sekcija .contactForm button.submitButton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
