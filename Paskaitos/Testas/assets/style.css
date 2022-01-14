@@ -32,22 +32,30 @@
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
   }
   .box-2 img {
     display: block;
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
   }
   .box-3 img {
     display: block;
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
   }
   .box-4 img {
     display: block;
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
   }
