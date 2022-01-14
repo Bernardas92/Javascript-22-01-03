@@ -34,6 +34,7 @@
     margin: 0 auto;
     border: 1px solid black;
     padding: 5px 5px 5px 5px;
+    background-color: cadetblue;
   }
   .box-2 img {
     display: block;
@@ -42,6 +43,7 @@
     margin: 0 auto;
     border: 1px solid black;
     padding: 5px 5px 5px 5px;
+    background-color: rgb(35, 6, 167);
   }
   .box-3 img {
     display: block;
@@ -50,6 +52,7 @@
     margin: 0 auto;
     border: 1px solid black;
     padding: 5px 5px 5px 5px;
+    background-color: rgb(167, 30, 6);
   }
   .box-4 img {
     display: block;
@@ -58,4 +61,5 @@
     margin: 0 auto;
     border: 1px solid black;
     padding: 5px 5px 5px 5px;
+    background-color: rgb(184, 181, 199);
   }
