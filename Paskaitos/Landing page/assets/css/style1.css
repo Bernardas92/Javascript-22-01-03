@@ -403,7 +403,7 @@ padding-bottom: 80px;
     width: 50%;
     float: left;
     display: block;
-    margin-bottom: 80px;
+   
 }
 #features .icon {
     box-sizing: border-box;
@@ -411,13 +411,13 @@ padding-bottom: 80px;
     float: left;
     font-size: 50px;
 }
-#features .left-text {
+#features .content {
     font-size: 20px;
     font-weight: 400;
     overflow: hidden;
     padding-left: 30px;
 }
-#features .left-text p {
+#features .content p {
     color: #ddd;
     font-size: 16px;
     font-weight: 300;
@@ -426,4 +426,179 @@ padding-bottom: 80px;
 }
 #features .feature-box {
     padding-bottom: 40px;
+}
+#history {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+#history .row {
+    margin-bottom: 60px;
+}
+#history .row h2 {
+    color: #222;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+#history .row h2::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 120px;
+    background: #ffc400;
+    margin: 15px auto;
+    position: relative;
+}
+#history .timeline-year span {
+    background-color: #ffc400;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+#history .timeline-year {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#history .timeline-year:first-child {
+    padding-top: 0px;
+}
+#history .timeline-item {
+    display: table;
+    position: relative;
+    z-index: 1;
+}
+#history .timeline-header {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+#history .timeline-text {
+    margin-bottom: 10px;
+    color: black;
+    text-align: left;
+}
+#history .timeline-item:before {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid grey;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+#history .timeline-item:hover.timeline-item:before {
+    background-color: #ffc400;
+    border-color:#ffc400;
+}
+#history .timeline-box {
+    float: left;
+    width: 41.6666666%;
+    padding: 20px 20px ;
+    border: 1px ;
+    background-color: rgb(207, 206, 206);
+}
+#history .timeline-box-right {
+    float: right;
+    width: 41.6666666%;
+    padding: 20px 20px ;
+    border: 1px ;
+    background-color: rgb(207, 206, 206);
+}
+#history .history-linedown {
+    width: 1000px;
+    height: 1px;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    position: relative;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    top: 500px;
+    transform: rotate(90deg);
+    z-index: -1;
+}
+#history .timeline-item:hover .timeline-box {
+    background-color: rgb(22, 18, 18);
+    color: white;
+}
+#history .timeline-item:hover .timeline-box p {
+    background-color: rgb(22, 18, 18);
+    color: white;
+}
+#history .timeline-item:hover .timeline-box-right {
+    background-color: rgb(22, 18, 18);
+    color: white;
+}
+#history .timeline-item:hover .timeline-box-right p {
+    background-color: rgb(22, 18, 18);
+    color: white;
+}
+#stats {
+    background-image: url(../img/statistic-banner.jpg);
+    background-attachment: fixed !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#stats .container {
+    text-align: center;
+}
+#stats .stats-heading {
+    margin-bottom: 60px;
+}
+#stats .stats-heading h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#stats .stats-heading h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#stats .stats-heading h2:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 200px;
+    background: yellow;
+    margin: 15px auto;
+    position: relative;
+}
+#stats .stats-column {
+    display: inline-block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 25%;
+}
+#stats .stats-number {
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 80px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#stats .stats-text {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
 }
