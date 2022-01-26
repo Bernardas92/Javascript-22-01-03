@@ -1,17 +1,18 @@
+body {
+  width: 100%;
+}
 .logo{
     position: absolute;
-    width: calc((120% - 1%) / 2);
-    height: 34px;
     top: 5%;
-    left: calc((100% - 57%) / 2);
+    left: 20%;
     }
-    .line1{
+    .line{
       position: absolute;
-      width: calc((120% - 1%) / 2);
+      width: 50%;
       height: 0px;
-      left:calc((100% - 60%) / 2);
-      top: 110.03px;
-      border: 1px solid #C4C4C4;
+      left: 20%;
+      top: 110px;
+      border: 1px solid #2204a7;
     }
     .home_icon{
     position: absolute;
@@ -23,7 +24,7 @@
     }
     .home_a{
       position: absolute;
-      top: 16%;
+      top: 15%;
     }
     .home_background{
       position: absolute;
@@ -41,29 +42,29 @@
     }
     .calendar_a{
       position: absolute;
-      top: 24.5%;
+      top: 24%;
     }
     .fe{
       position: absolute;
       left: 35px;
-      right: 95.69%;
+      right: 95%;
       top: 32%;
-      bottom: 65.01%;
+      bottom: 65%;
     }
     .fe_a{
       position: absolute;
-      top: 31.5%;
+      top: 31%;
     }
     .games{
       position: absolute;
       left: 27px;
-      right: 95.14%;
+      right: 95%;
       top: 39%;
-      bottom: 58.5%;
+      bottom: 58%;
     }
     .game_a{
       position: absolute;
-      top: 38.5%;
+      top: 38%;
     }
     .nav_on_hover {
       z-index: 1;
@@ -85,29 +86,29 @@
     .nav_on_hover a {
       padding: 8px 10px 8px 100px;
       text-decoration: none;
-      font-size: 25px;
+      font-size: 16px;
       color: #818181;
       display: block;
-      transition: 0.3s;
+      transition: 0.2s;
     }
     
     .nav_on_hover a:hover {
-      color: #02577A;
+      color: #024663;
     }
     
     .baltic_institute{
       position: absolute;
-      width: calc((100% - 50%) / 2);
+      width: 25%;
       height: 24px;
       left: 626px;
       top: 882px;
     }
     .line2{
       position: absolute;
-      width: 346.01px;
+      width: 346px;
       height: 0px;
       left: 580px;
       top: 871px;
-      border: 1px solid #02577A;
+      border: 1px solid #024663;
     }
     
