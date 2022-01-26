@@ -24,7 +24,7 @@ h3,
 h4, 
 h5,
 h6 {
-    font-family: 'Oswald', sans-serif;
+    font-family: sans-serif;
     margin-top: 0;
     margin-bottom: 10px;
     line-height: 1.1;
@@ -924,4 +924,58 @@ h3.top-heading {
 
 #portfolio .masonry-blocks > .masonry-block > a:hover > img {
     transform: scale(1.2);
+}
+
+#team .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1400px;
+}
+
+#team .text-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#team .text-center .member-photo img {
+    max-width: 100%;
+    display: block;
+    width: 345px;
+    height: 345px;
+    padding: 0 15px;
+
+}
+
+#team .text-center .team-content {
+    text-align: center;
+}
+
+#team .text-center .team-content h5 {
+    padding-top: 15px;
+    font-weight: 800;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#team .text-center .team-content h4 {
+    font-size: 14px;
+    color: #ffc400;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#team .text-center .team-content > p {
+    color: black;
+}
+
+#team .text-center .team-icon > ul  {
+    display: flex;
+    justify-content: center;
+    color: #b8b8b8;
+}
+
+#team .text-center .team-icon > ul >li {
+    padding-right: 15px;
 }
