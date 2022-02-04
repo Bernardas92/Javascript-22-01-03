@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Nd</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let x = false //boolean reiksmes true arba false
+        let y = '' //string
+        let o = 10 //number
+        let z = function() {} //function
+        let w = [] //array
+        let q = {} //object
+
+        console.log(typeof w)
+    
+        if(x) {
+            console.log('X yra teigiamas')
+        } 
+
+        let skaicius = 10
+        
+        if(typeof skaicius == 'number')
+            console.log('Kintamasis yra skaicius')
+            
+        //Sudetis su operatoriumi
+        skaicius += 15
+        console.log(skaicius)
+        
+        //Atimtis su operatoriumi
+        skaicius -= 15
+        console.log(skaicius)
+
+        //Daugyba su operatoriumi
+        skaicius *= 2
+        console.log(skaicius)
+
+        //Dalyba su operatoriumi
+        skaicius /= 5
+        console.log(skaicius)
+
+        //skaicius = skaicius + 1
+        skaicius++
+        //skaicius = skaicius - 1
+        skaicius--
+
+        console.log(skaicius) // Rezultatas 4
+        
+        if(skaicius === 15)
+            console.log('Skaicius yra lygus keturiems')
+
+        //skaicius = 8 % skaicius;
+        skaicius %= 8;
+        console.log('Modulis: ' + skaicius) 
+
+
+        skaicius = 'Tekstas'
+            console.log(skaicius)
+        
+        
+    </script>
+</ol>
+<h1>1.</h1>
+<button onclick="random()">Numeriai</button>
+<div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+
+    <p class="vnt">
+        0 yra = <span></span><br>
+        1 yra = <span></span><br>
+        2 yra = <span></span><br>
+    </p>
+
+</div>
+<form>
+    1st Number : <input type="text" id="firstNumber" /><br>
+    2nd Number: <input type="text" id="secondNumber" /><br>
+    <input type="button" onClick="multiplyBy()" Value="Multiply" />
+    <input type="button" onClick="divideBy()" Value="Divide" />
+    </form>
+    <p>The Result is : <br>
+    <span id = "result"></span>
+    </p>
+    <script type="text/javascript" src="assets/index.js"></script>
+
+    <input type = "text" id="input"/>
+    <div id="rezultatas"></div>
+    
+</body>
+</html>

@@ -94,8 +94,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    transition: all .2s ease-in-out;
 }
-
+#header .navbar.scrolled{
+    background: rgb(22, 21, 21);
+    padding: 0;
+}
 #header .logo {
     float: left;
     padding-top: 20px;

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <script type="text/javascript" src="assets/js/homework.js"></script>
+    <script type="text/javascript">
+
+                var vardas = 'Lenovo';
+                var pavarde = ', Apple';
+                var gimes = ', 2022';
+
+                console.log(vardas + pavarde + gimes);
+
+                function randomSkaicius(min, max) { 
+        return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+        let skaicius = randomSkaicius (0, 4);
+
+        console.log (skaicius);
+        console.log (skaicius + skaicius );
+        console.log (skaicius - skaicius );
+        console.log (skaicius * skaicius );
+        console.log (skaicius / skaicius );
+
+        function randomSkaicius(min, max) { 
+        return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+        var x = randomSkaicius(0, 25);
+        var y = randomSkaicius(0, 25);
+        var z = randomSkaicius(0, 25);
+
+        console.log(x)
+        console.log(y)
+        console.log(z)
+
+     var vidurinis = Math.max(
+        Math.min(x, y),
+        Math.min( Math.max(x, y),z)
+        )
+        console.log(Math.min( Math.max(x, y),z))
+        console.log(vidurinis)
+    </script>
+</body>
+</html>

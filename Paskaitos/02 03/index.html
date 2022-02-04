@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "text" id="input"/>
+    <div id="rezultatas"></div>
+    <script>
+        const input = document.getElementById('input')
+        input.addEventListener('keyup', event => {
+            document.getElementById('rezultatas').innerText = input.value
+        })
+
+        const input = document.getElementById('input')
+        input.addEventListener('keyup', event => {
+            cosole.log(input.value.lenght)
+
+            document.getElementById('rezultatas').innerText = input.value
+        })
+
+        let x = 'lorem ipsum assad asd as asdaasd a sdasd asd asdsa '
+        const input = document.getElementById('input')
+        input.addEventListener('keyup', event => {
+            let tekstas = input.value;
+
+            if(input.value.lenght >= 25) {
+               tekstas = input.value.substring(0, 25) + '<br />' 
+               tekstas += input.value.substring(25)
+            }
+
+            document.getElementById('rezultatas').innerHTML = tekstas
+        })
+
+</script>
+</body>
+</html>
