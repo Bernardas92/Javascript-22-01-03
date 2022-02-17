@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function rand(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+}
+
+
+// for (let i = 10; i > 0; i--) {
+//     console.log(i);
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(10 - i);
+// }
+
+const animal = 'Begemotas';
+
+// console.log(animal[0]);
+// console.log(animal[6]);
+
+
+// for (let i = 0; i < animal.length; i++) {
+//     console.log(animal[i], i);
+// }
+
+
+
+// let animal100 = '';
+
+// for (let i = 0; i < 100; i++) {
+//     animal100 = animal100 + ' ' + animal;
+//     // animal100 += animal; tas pats
+// }
+
+// console.log(animal100);
+
+
+// let sum1 = 0;
+
+// for (let i = 0; i < 10; i++) {
+//     let run = rand(1, 6);
+//     console.log(run);
+
+//     sum1 = sum1 + run;
+// }
+
+// console.log('Suma:', sum1);
+
+
+
+let sum2 = 0;
+let counter2 = 0;
+
+for (let i = 0; i < 10; i++) {
+    counter2++;
+    let run = rand(1, 6);
+    console.log(run);
+    sum2 = sum2 + run;
+    if (sum2 > 20) {
+        break;
+    }
+
+}
+
+console.log('Suma:', sum2, 'Viso:', counter2);
+
+
+
+let sum3 = 0;
+let counter3 = 0;
+
+for (let i = 0; i < 10; i++) {
+    let run = rand(1, 6);
+    if (sum3 + run > 20) {
+        break;
+    }
+    counter3++;
+    console.log(run);
+    sum3 = sum3 + run;
+}
+
+console.log('Suma:', sum3, 'Viso:', counter3);
+
+
+
+let more4 = 0;
+
+for (let i = 0; i < 10; i++) {
+    let run = rand(1, 6);
+    console.log(run);
+    if (run > 4) {
+        more4++;
+    }
+
+}
+
+console.log('Kartai:', more4);
+
+
+let _3 = 0;
+let _5 = 0;
+
+for (let i = 0; i < 10; i++) {
+    let run = rand(1, 6);
+    console.log(run);
+    if (run == 3) {
+        _3++;
+    } else if (run == 5) {
+        _5++;
+    }
+
+}
+
+console.log('3:', _3, '5:', _5);
+
+// Sukurkite vieną kintamąjį, jam priskirkite skaičių (iš intervalo 5…10), kurį sugeneruoja funkcija rand(5, 10) 
+// ir jį atspauszdinkite pasinaudojus console.log;
+console.log('______1 uzduotis_______')
+let x = rand(5, 10);
+
+console.log(x);
+
+// Sukurkite kintamąjį ir jam priskirkite stringą “Labas”.
+//  Pasinaudodami ciklu ir console.log atspauzdinkite kintamąjį 5 kartus;
+console.log('______2 uzduotis_______')
+
+let y = 'Labas';
+
+for(i = 0; i < 5; i++) {
+    console.log(y, i);
+}
+// Pasinaudojus ciklu ir ir console.log atspauzdinkite kintamąjį iš 2 uždavinio 7 kartus;
+console.log('______3 uzduotis_______')
+let o = 'Labas';
+
+for(i = 0; i < 7; i++) {
+    console.log(o, i);
+}
+
+// Pasinaudojus ciklu ir ir console.log atspauzdinkite kintamąjį iš 2 uždavinio tiek kartų, koks skaičius yra sugeneruotas;
+console.log('______4 uzduotis_______')
+let f = 'Labas';
+
+for(i = 0; i < 10; i++) {
+    console.log(f, i);
+}
+// Pasinaudojus ciklu ir ir console.log atspauzdinkite kintamąjį iš 2 uždavinio tiek kartų,
+//  koks skaičius yra sugeneruotas, bet tik tada jeigu jis didesnis už 7;
+console.log('______5 uzduotis_______')
+
+let l = 'Labas';
+
+for(i = 0; i < 10; i++) {
+    if(i > 7) {
+        console.log(l, i); 
+    }
+   
+}
+
+// Deklaruokite kintamąjį už ciklo ribų. Ciklo viduje generuokite atsitiktinius skaičius funkcija rand(),
+//  kurie yra iš intervalo 10…20. Ciklą kartokite 5 kartus;
+// A Ciklo viduje sugeneruotą reikšmę priskirkite kintamajam, kurį sukūrėte už ciklo ribų ir jį atspauzdinkite;
+// B Skaičiuokite ciklo viduje generuojamų reikšmių sumą, ją priskirdami kintamajam, 
+// kurį sukūrėte už ciklo ribų. Rezultatą atspauzdinkite pasinaudodami console.log už ciklo ribų;
+// C Skaičius, generuojamus ciklo viduje dėkite į stringo tipo kintamąjį 
+// tarp skaičių darydami tarpą. Stringo tipo kintamąjį atspazdinkite už ciklo ribų jam pasibaigus;
+// D Skaičius, generuojamus ciklo viduje dėkite į stringo tipo kintamąjį tarp skaičių darydami tarpą. 
+// Ciklui pasibaigus prie stringo tipo kintamojo pridėkite ciklo viduje generuotų skaičių sumą,
+//  paskaičiuotą kaip B dalyje. Stringo tipo kintamąjį atspausdinkite pasinaudodami console.log;
+console.log('______6 uzduotis_______')
+
+let a = '';
+let suma = 0;
+
+for(i = 0; i < 5; i++) {
+    let gen = rand(10, 20);
+   a += gen + ' ';
+
+   suma += gen;
+
+   if(i == 4) {
+       a += suma
+   }
+}
+console.log('Kintamasis:', a); 
+
+// Deklaruokite kintamąjį (jeigu reikia kelis kintamuosius) už ciklo ribų. Ciklo viduje 
+// generuokite atsitiktinius skaičius funkcija rand(), kurie yra iš intervalo 10…25. 
+// Ciklą kartokite tol, kol ciklo viduje bus sugeneruotas skaičius mažesnis nei 12;
+// A Ciklo viduje sugeneruotą reikšmę priskirkite kintamajam, kurį sukūrėte už ciklo ribų ir jį atspauzdinkite;
+console.log('______8 uzduotis_______')
+
+//-------------------- 7 --------------------
+/*
+Deklaruokite kintamąjį už ciklo ribų. Ciklo viduje generuokite
+atsitiktinius skaičius funkcija rand(), kurie yra iš intervalo
+10…20. Ciklą kartokite 5 kartus;
+A) Ciklo viduje sugeneruotą reikšmę priskirkite kintamajam,
+kurį sukūrėte už ciklo ribų ir jį atspausdinkite;
+*/
+
+// let out
+
+// for (let i = 0; i < 5; i++){
+//   out = rndNum(10, 20)
+// console.log(out);
+// }
+
+/*
+B) Skaičiuokite ciklo viduje generuojamų reikšmių sumą, ją priskirdami
+kintamajam, kurį sukūrėte už ciklo ribų. Rezultatą atspausdinkite
+pasinaudodami console.log už ciklo ribų;
+*/
+
+// let out = 0
+
+// for (let i = 0; i < 5; i++){
+//   out += rndNum(10, 20)
+// }
+
+// console.log('OUT: ' + out);
+
+/*
+C) Skaičius, generuojamus ciklo viduje dėkite į stringo tipo kintamąjį tarp
+skaičių darydami tarpą. Stringo tipo kintamąjį atspasdinkite už
+ciklo ribų jam pasibaigus;
+*/
+
+// let out = 0
+
+// for (let i = 0; i < 5; i++){
+//   out += ' ' + rndNum(10, 20) + ' '
+// }
+
+// console.log('OUT: ' + out);
+
+/*
+D) Skaičius, generuojamus ciklo viduje dėkite į stringo tipo kintamąjį
+tarp skaičių darydami tarpą. Ciklui pasibaigus prie stringo tipo kintamojo
+pridėkite ciklo viduje generuotų skaičių sumą, paskaičiuotą kaip B dalyje.
+Stringo tipo kintamąjį atspausdinkite pasinaudodami console.log;
+*/
+
+// let out = 0
+// let string = ''
+
+// for (let i = 0; i < 5; i++){
+//   string += rndNum(10, 20) + ' '
+//   out += rndNum(10, 20)
+// }
+
+// console.log('OUT: ' + string + 'Sum: ' + out);
+
+//-------------------- 8 --------------------
+/*
+Deklaruokite kintamąjį (jeigu reikia kelis kintamuosius) už ciklo ribų.
+Ciklo viduje generuokite atsitiktinius skaičius funkcija rand(), kurie yra
+iš intervalo 10…25. Ciklą kartokite tol, kol ciklo viduje bus sugeneruotas
+skaičius mažesnis nei 12;
+A) Ciklo viduje sugeneruotą reikšmę priskirkite kintamajam,
+kurį sukūrėte už ciklo ribų ir jį atspausdinkite;
+*/
+
+// let a = 0
+// let b = 0
+
+// while (true){
+//   a = rndNum(10, 25)
+//   console.log('a: ' + a);
+//   if (a < 12){
+//     break
+//   }
+// }
+
+// console.log('    A: ' + a);
+
+/*
+B) Suskaičiuokite kiek iteracijų padarėte ir jų kiekį atspauzdinkite pasinaudodami
+console.log už ciklo ribų jam pasibaigus;
+*/
+
+// let a = 0
+// let b = 0
+
+// while (true){
+//   b++
+//   a = rndNum(10, 25)
+//   console.log('a: ' + a);
+//   if (a < 12){
+//     break
+//   }
+// }
+
+// console.log('    B: ' + b);
+
+/*
+C) Skaičiuokite ciklo viduje generuojamų reikšmių sumą, atmesdami (neskaičiuodami)
+skaičius, kurie yra didesni nei 18, ją priskirdami kintamajam, kurį sukūrėte už ciklo ribų.
+Rezultatą atspausdinkite pasinaudodami console.log už ciklo ribų;
+*/
+
+// let a = 0
+// let sum = 0
+
+// while (true){
+//   a = rndNum(10, 25)
+//   console.log('a: ' + a);
+//   if (a < 18){
+//     sum += a
+//   }
+//   if (a < 12){
+//     break
+//   }
+// }
+
+// console.log('    SUM: ' + sum);
+
+/*
+D) Sumą skaičiuokite kaip C dalyje, bet papildomai susikurkite kintamąjį,
+kuriame suskaičiuokite kiek reikšmių atmetėte (nesumavote).
+Rezultatą su suma ir atmestų reikšmių kiekiu atspauzdinkite pasinaudodami console.log už ciklo ribų;
+*/
+
+// let a = 0
+// let sum = 0
+// let nonSum = 0
+
+// while (true){
+//   a = rndNum(10, 25)
+//   console.log('a: ' + a);
+//   if (a < 18){
+//     sum += a
+//   } else {
+//     nonSum++
+//   }
+//   if (a < 12){
+//     break
+//   }
+// }
+
+// console.log('    SUM: ' + sum);
+// console.log('Atmesta: ' + nonSum);
+
+/*
+E) Suskaičiuokite kiek tarp cikle atsitiktinai generuojamų reikšmių
+yra lyginių ir kiek nelyginių skaičių. Rezultatą atspausdinkite pasinaudodami
+console.log už ciklo ribų jam pasibaigus.
+*/
+
+// let a = 0
+// let odd = 0
+// let even = 0
+
+// while (true){
+//   a = rndNum(10, 25)
+//   console.log('a: ' + a);
+//   if (a % 2 == 0){
+//     even++
+//   } else {
+//     odd++
+//   }
+//   if (a < 12){
+//     break
+//   }
+// }
+
+// console.log('Lyginiai: ' + even);
+// console.log('Nelyginiai: ' + odd);
+
+/*
+F) Ciklą iš dalies B kartokite tol,  kol to ciklo iteracijų kiekis bus didesnis
+nei 20 (vieno ciklo). Paskaičiuokite kiek pakartojimų buvo atlikta ir
+rezultatą atspausdinkite pabaigoje.
+*/
+
+// let a = 0
+// let b = 0
+
+// while (true){
+//   b++
+//   a = rndNum(10, 25)
+//   console.log('a: ' + a);
+//   if (a < 12 && b > 20){
+//     break
+//   }
+// }
+
+// console.log('    B: ' + b);
+
+//-------------------- 9 --------------------
+/*
+Ciklo viduje generuokite atsitiktinius skaičius funkcija rand(),
+kurie yra iš intervalo 5-10. Ciklą kartokite tol, kol ciklo
+viduje bus sugeneruotas skaičius 5;
+A) Ciklo viduje paleiskite dar vieną ciklą kurį kartokite tiek kartų, koks
+skaičius buvo sugeneruotas. Paskaičiuokite kiek iteracijų padarė išorinis
+ciklas ir kiek bendrai iteracijų padarė vidinis ciklas. Rezultatus atspausdinkite
+pasinaudodami console.log už ciklo ribų jam pasibaigus;
+*/
+
+// let a = 0
+// let b = 0
+// let c = 0
+
+// while (true){
+//   b++
+//   a = rndNum(5, 10)
+//   console.log('a: ' + a);
+//   for (let i = 1; i <= a; i++){
+//     c++
+//     console.log('aaaaa: ' + i);
+//   }
+//   if (a == 5){
+//     break
+//   }
+// }
+
+// console.log('Išorinio ciklo iteracijos: ' + b);
+// console.log('Vidinio ciklo iteracijos: ' + c);
+
+/*
+B) Padarykite taip, kad išorinis ciklas pasibaigtų kai 5 yra sugeneruojamas ne pirmą,
+bet trečią kartą ir paskaičiuokite iteracijas analogiškai kaip A dalyje;
+*/
+
+// let a = 0
+// let b = 0
+// let c = 0
+// let d = 0
+
+// while (true){
+//   b++
+//   a = rndNum(5, 10)
+//   console.log('a: ' + a);
+//   for (let i = 1; i <= a; i++){
+//     c++
+//     console.log('aaaaa: ' + i);
+//   }
+//   if (a == 5){
+// d++
+//   } if (d == 3){
+//     break
+//   }
+// }
+
+// console.log('Išorinio ciklo iteracijos: ' + b);
+// console.log('Vidinio ciklo iteracijos: ' + c);
+
+/*
+C) Padarykite analogiškai kaip B dalyje, bet tik kai
+5 yra sugeneruojami 3 kartus iš eilės;
+*/
+
+// let a = 0
+// let b = 0
+// let c = 0
+// let d = 0
+
+// while (true){
+//   b++
+//   a = rndNum(5, 10)
+//   console.log('a: ' + a);
+//   for (let i = 1; i <= a; i++){
+//     c++
+//     console.log('aaaaa: ' + i);
+//   }
+//   if (a == 5){
+// d++
+//   } else {
+//     d = 0
+//   } if (d == 3){
+//     console.log('3x is eiles');
+//     break
+//   }
+// }
+
+// console.log('Išorinio ciklo iteracijos: ' + b);
+// console.log('Vidinio ciklo iteracijos: ' + c);
+
+//-------------------- 10 --------------------
+/*
+Kazys ir Petras žaidžiai bingo. Petras per vieną partiją surenka taškų kiekį
+nuo 10 iki 20, Kazys - surenka taškų kiekį nuo 5 iki 25. Console.log išvesti
+žaidėjų vardus su taškų kiekiu ir “Partiją laimėjo: ​laimėtojo vardas​”.
+Taškų kiekį generuokite funkcija ​rand()​. Žaidimą laimi tas, kas greičiau
+surenka 222 taškus. Partijas kartokite tol, kol kažkuris žaidėjas pirmas
+surinks 222 arba daugiau taškų.
+*/
+
+// let kazys = 0
+// let kTaskai = 0
+// let petras = 0
+// let pTaskai = 0
+
+// while (true){
+// kazys = rndNum(5, 25)
+// petras = rndNum(10, 20)
+// pTaskai += petras
+// kTaskai += kazys
+
+// console.log('Petro taskai: ' + pTaskai);
+// console.log('Kazio taskai: ' + kTaskai);
+// console.log('-----------------');
+
+// if (pTaskai >= 222){
+//   console.log('Laimejo Petras su rezultatu: ' + pTaskai);
+//   break
+// } else if (kTaskai >= 222) {
+//   console.log('Laimejo Kazys su rezultatu: ' + kTaskai);
+//   break
+// }
+// }
+
+// console.log('Petro taskai FINAL: ' + pTaskai);
+// console.log('Kazio taskai FINAL: ' + kTaskai);
+    </script>
+</body>
+</html>

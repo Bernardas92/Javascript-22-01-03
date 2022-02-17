@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function rand(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+}
+
+let siunta = 'M';
+
+console.log('Siunčiam ', siunta);
+
+
+if (siunta == 'S') {
+    console.log('Telpa S');
+}
+if (siunta == 'S' || siunta == 'M') {
+    console.log('Telpa M');
+}
+if (siunta == 'S' || siunta == 'M' || siunta == 'L') {
+    console.log('Telpa L');
+}
+if (siunta == 'S' || siunta == 'M' || siunta == 'L' || siunta == 'XL') {
+    console.log('Telpa XL');
+}
+
+switch (siunta) {
+    case 'S':
+        console.log('Telpa S');
+    case 'M':
+        console.log('Telpa M');
+    case 'L':
+        console.log('Telpa L');
+    default:
+        console.log('Telpa XL');
+}
+
+
+let light = 'yellow';
+
+console.log('light', light);
+
+if (light == 'green') {
+    console.log('Go');
+} else if (light == 'yellow') {
+    console.log('Ready');
+} else {
+    console.log('Wait');
+}
+
+switch (light) {
+    case 'green':
+        console.log('Go');
+        break;
+    case 'yellow':
+        console.log('Ready');
+        break;
+    default:
+        console.log('Wait');
+}
+
+
+let run = rand(1, 6);
+
+console.log('run', run);
+
+switch (run) {
+    case 1:
+    case 5:
+        console.log('Ledai');
+        break;
+    case 2:
+    case 4:
+        console.log('Cipsai');
+        break;
+    default:
+        console.log('Pienas');
+}
+
+let run2;
+let count2 = 0;
+let saugiklis = 0;
+do {
+    if (saugiklis++ > 100) break;
+    count2++;
+    run2 = rand(1, 6);
+    console.log(run2);
+
+} while (run2 != 10);
+console.log('prasisuko:', count2);
+
+// == --> !=
+// != --> ==
+// > --> <=
+// <= --> >
+// < --> >=
+// >= --> <
+// || --> &&
+// && --> ||
+    </script>
+</body>
+</html>

@@ -169,6 +169,45 @@
  
 }
 
-@media screen {
-  
+@media only screen and (max-width: 576px) {
+  #home .right .text > span {
+    width: 400px;
+    left: calc((50% - 200px) + 50px);
+    top: 3%;
+    z-index: -1;
+  }
+  .right span {
+    width: 90%;
+  }
+  #home .right {
+    left: calc((50% - 200px) + 70px);
+    top: 20%;
+    width: 300px;
+    z-index: -1;
+  }
+  #home .right .text {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #home .homeb {
+    background-position: top left;
+    width: 900px;
+    margin-top: 15%;
+    height: 300px;
+  }
+  .footeris {
+    width: 400px;
+    left: calc((50% - 200px) + 50px);
+    z-index: -1;
+    padding: 0 50px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .footer-line {
+    width: 300px;
+  }
+  .footer {
+    left: calc((50% - 150px) + 50px);
+    z-index: -1;
+  }
 }

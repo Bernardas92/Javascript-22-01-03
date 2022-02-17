@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function randomSkaicius(min, max) { 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+let masyvas = []
+
+for(let i = 0; i < 10; i++) {
+    masyvas.push(randomSkaicius(0, 7));
+}
+
+console.table(masyvas);
+
+//Atspausdinti bet tik tas kurios didesnes uz 3 
+
+for(let i = 0; i < masyvas.length; i++) {
+    if (masyvas[i] > 3) 
+    console.log(masyvas[i]);
+}
+//paskaiciuoti masyvo elementu suma
+let masyvas = [];
+let bigSum = 0;
+
+for(let i = 0; i < masyvas.length; i++) {        
+    bigSum = bigSum + masyvas[i]
+}
+console.log(bigSum);
+
+
+        //sursti maziausia elementa masyve
+
+let minVal = mas[0];
+
+for(let i = 0; i < masyvas.length; i++) {
+    if(masyvas[i] < minVal) {
+        minVal = mas[i];
+    }
+}
+console.log(minVal);
+
+//paskaiciuoti kiek lyginiu reiksmiu yra masyve
+
+let masyv = 0;
+
+for(let i = 0; i < masyvas.length; i++) {
+    if(masyvas[i] % 2 == 0){
+        masyv++;
+    }
+}
+console.log(masyv)
+
+    </script>
+</body>
+</html>

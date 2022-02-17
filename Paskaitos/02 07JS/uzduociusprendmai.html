@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzduotys</title>
+</head>
+<body>
+    <span>PIRMA UZDUOTIS</span>
+    <div id="Pirma_uzduotis"></div>
+   <script>
+       let rezultatas = '' //sukurtas tuscias kintamasis rezultatui talpinti
+
+       for(let i = 1; i <= 400; i++) {//sukuriame ciklas kuris suktusi 400 kartu 
+           rezultatas += '*' //Naujos zvaigzdutes pridejimas kiekvieno ciklo eigoje
+
+           if(i % 50 == 0)
+              rezultatas += '<br />'
+       }
+//kintamojo isvedimas i narsykle
+       document.getElementById('Pirma_uzduotis').innerHTML = rezultatas
+   </script>
+
+   <span>ANTRA UZDUOTIS</span>
+     <div id="antra_uzduotis"></div>
+   <script>
+       function randomSkaicius(min, max) { 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+       rezultatas = ''
+       let skaiciuotuvas = 0;
+
+       for (let i = 0; i < 300; i++) {
+           let skaicius = randomSkaicius(0, 300)
+           if(skaicius > 150)
+            skaiciuotuvas++
+           if(skaicius > 275)
+           rezultatas += `<span style="color:red">${skaicius}</span>`
+           else
+           rezultatas += skaicius + ' '
+          
+       }
+
+       rezultatas += `<h3>skaiciu didesniu nei 150 yra: ${skaiciuotuvas} </h3>`
+
+
+
+       document.getElementById('antra_uzduotis').innerHTML = rezultatas
+   </script>
+   <span>TRECIA UZDUOTIS</span>
+   <div id="trecia_uzduotis"></div>
+
+   <script>
+       rezultatas = ''
+       let daliklis = 77
+
+       for(let i = 1; i <= 3000; i++) {
+
+        let gautasSkaicius = i / daliklis
+
+           //if(i % daliklis ==0)
+           if(Number.isInteger(gautasSkaicius)) {
+
+               if(i != daliklis)
+               rezultatas += ', '
+               rezultatas += i 
+           }
+
+       }
+       document.getElementById('trecia_uzduotis').innerHTML = rezultatas
+   </script>
+<span>KETIVRTA_UZDUOTIS</span>
+
+   <div id="Ketvirta_uzduotis" style="line-height: 8px;"></div>
+
+   <script>
+   rezultatas = ''
+   let dydis = 25
+
+   for(let i = 1; i <= (dydis * dydis); i++) {
+       rezultatas += '*'
+
+       if(i % dydis === 0)
+       rezultatas += '<br/>'
+   }
+   document.getElementById('Ketvirta_uzduotis').innerHTML = rezultatas
+</script>
+
+<div id="penkta_uzduotis"></div>
+
+<script>
+    let benas = 0
+    let jovita = 0
+    rezultatas = ''
+
+    while(true) {
+        let benas_score = randomSkaicius(10, 20)
+        let jovita_score = randomSkaicius(5, 25)
+
+        benas += benas_score
+        jovita += jovita_score
+
+        if (benas_score == 12 || jovita_score == 12) {
+           rezultatas += 'Partija negaliojanti <br />'
+           continue; //Praleidzia viena rata ir nebeskaito kodo einancio zemiau komandos
+        }
+
+        if(benas_score > jovita_score)
+         rezultatas += 'Partija laimejo: Benas <br />'
+
+        if(benas_score > benas_score)
+         rezultatas += 'partija laimejo: Jovita <br />'
+
+        if (jovita_score == benas_score)
+        rezultatas += 'Ivyko lygiosios'
+
+        if(benas >= 222 || jovita >= 222) {
+
+            if(benas > jovita) {
+            reultatas += `Zaidima laimejo: Bena, surinkes: ${benas} taskus <br />`
+            }
+
+            else {
+            rezultatas += `Zaidima laimejo: Bena, surinkusi: ${jovita} taskus <br />`
+            }
+
+            break; //nutraukia cikla pilnai
+        }     
+    }
+    document.getElementById('penkta_uzduotis').innerHTML = rezultatas
+</script>
+
+<div id="sesta_uzduotis"></div>
+
+<style>
+    #sesta_uzduotis {
+        background: black;
+        width: 500px;
+        height: 500px;
+        position: relative;
+    }
+
+    #sesta_uzduotis .block {
+        width: 5px;
+        height: 5px;
+        background: red;
+        position: absolute;
+    }
+    #sesta_uzduotis h3 {
+        padding-top: 600px;
+    } 
+    
+</style>
+
+<script>
+    rezultatas = ''
+    let block_count = 0;
+
+for (let i = 0; i < 300; i++) {
+
+    let top = randomSkaicius(0, 550)
+    let left = randomSkaicius(0, 550)
+
+    if(top > 495 || left > 495)
+    block_count++
+
+ rezultatas += `<div class="block" style="top:${top}px; left: ${left}px"></div>`
+
+}
+
+rezultatas += `<h3> Is krastiniu islendaciu blokeliu suma yra: ${block_count}</h3>`
+document.getElementById('sesta_uzduotis').innerHTML = rezultatas
+</script>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<span>NAMU DARBAI</span>
+
+<span>1UZDUOTIS</span>
+
+<div id="H"></div>
+<div id="S"></div>
+<div id="skaicius"></div>
+
+<script>
+    rezultatas = ''
+
+    while(true) {
+    let atsakymas = randomSkaicius(0, 1)
+    if(atsakymas == 0 ) {
+    rezultatas += 'H'
+    break;
+}
+    else {
+    rezultatas += 'S'
+}
+}
+document.getElementById('H').innerHTML = rezultatas
+//-----------------------------------------------------------------------------------------------------------
+// let moneta;
+// while(moneta != 0) {
+//     moneta = randomSkaicius(0, 1);
+//     if(moneta == 1) {
+//         console.log('S');
+//     }
+//     else if (moneta == 0) {
+//         console.log('H');
+//     }
+// }
+//-------------------------------------------------------------------------------------------------------
+// let kartai = 0;
+// while (kartai < 3) {
+//    let moneta = randomSkaicius(0, 1);
+//     if(moneta == 1) {
+//         console.log('S');
+//     }
+//     else if (moneta == 0) {
+//         kartai++;
+//         console.log('H');
+//         }
+// }
+//-----------------------------------------------------------------------------------------------------------
+// let kartai = 0;
+// while (kartai < 3) {
+//    let moneta = randomSkaicius(0, 1);
+//     if(moneta == 1) {
+//         kartai = 0;
+//         console.log('S');
+//     }
+//     else if (moneta == 0) {
+//         kartai++; 
+//         console.log('H'); 
+//     }
+    
+//----------------------------------------------------------------------------------------------------------
+rezultatas = ''
+let herbas = 0
+
+while(true) {
+    let atsakymas = randomSkaicius(0, 1)
+    if(atsakymas == 0 ) {
+        rezultatas += 'H'
+        herbas++
+    }else {
+        rezultatas += 'S'
+    }
+    if (herbas == 3 )
+    break;
+}
+document.getElementById('S').innerHTML = rezultatas
+
+rezultatas = ''
+herbas = 0
+
+while(true) {
+    let atsakymas = randomSkaicius(0, 1)
+    if(atsakymas == 0 ) {
+        rezultatas += 'H'
+        herbas++
+    }else {
+        rezultatas += 'S'
+        herbas = 0
+    } if (herbas == 3 )
+    break;
+}
+document.getElementById('skaicius').innerHTML = rezultatas
+</script>
+
+
+
+
+<div id="namu-darbai"></div>
+<div id="antras"></div>
+<div>
+    <p>Į vinį nepataikė: <span id="nepataikem"></span></p>
+</div>
+
+
+<script>
+//     vinysmm= (8.5 * 10 * 5)
+//     rezultatas = 0
+//     let count = 0;    
+
+//     for (count = 0; rezultatas < vinysmm; count++) {
+//         let vinis = randomSkaicius(5, 20) 
+//         rezultatas += vinis
+//     }
+//     document.getElementById('namu-darbai').innerHTML = count
+
+//     rezultatas = 0
+//     count = 0; 
+//     nepataikem = 0
+
+//     for (count = 0; rezultatas < vinysmm; count++) {
+//         let vinis = randomSkaicius(20, 30) 
+//         let pataiko = randomSkaicius(0, 1)
+//         if (pataiko == 0) {
+//             rezultatas += vinis
+//     }
+//         else {
+//             nepataikem++
+            
+//         }
+
+//     }
+// document.getElementById('antras').innerHTML = count
+// document.getElementById('nepataikem').innerHTML = nepataikem
+</script>
+<!-- <script>
+
+let vinis1 = 85;
+let vinis2 = 85;
+let vinis3 = 85;
+let vinis4 = 85;
+let vinis5 = 85;
+let mazaisSmugiais = 0;
+let dideliaisSmugiais = 0;
+
+function mazaisSmugiaisf (vinis) {
+ let smugis = randomSkaicius(5, 20);
+ return vinis - smugis;
+}
+
+function didelisSmugis (vinis) {
+    let didelisSmugis = randomSkaicius(20, 30);
+    let tikimybe = randomSkaicius(0, 1);
+    return vinis - didelisSmugis * tikimybe; 
+}
+while(vinis1 > 0) {
+    vinis1 = mazaisSmugiaisf(vinis1);
+    mazaisSmugiais++;
+}
+while(vinis2 > 0) {
+    vinis1 = mazaisSmugiaisf(vinis2);
+    mazaisSmugiais++;
+}
+while(vinis3 > 0) {
+    vinis1 = mazaisSmugiaisf(vinis3);
+    mazaisSmugiais++;
+}
+while(vinis4 > 0) {
+    vinis1 = mazaisSmugiaisf(vinis4);
+    mazaisSmugiais++;
+}
+while(vinis5 > 0) {
+    vinis1 = mazaisSmugiaisf(vinis5);
+    mazaisSmugiais++;
+}
+console.log(`Mazu smugiu reikejo ${mazaisSmugiais}`);
+
+let vinis6 = 85
+let vinis7 = 85
+let vinis8 = 85
+let vinis9 = 85
+let vinis10 = 85
+
+while(vinis6 > 0) {
+    vinis6 = didelisSmugis(vinis6);
+    dideliaisSmugiais++;
+}
+while(vinis7 > 0) {
+    vinis7 = didelisSmugis(vinis7);
+    dideliaisSmugiais++;
+}
+while(vinis8 > 0) {
+    vinis8 = didelisSmugis(vinis8);
+    dideliaisSmugiais++;
+}
+while(vinis9 > 0) {
+    vinis9 = didelisSmugis(vinis9);
+    dideliaisSmugiais++;
+}
+while(vinis10 > 0) {
+    vinis10 = didelisSmugis(vinis10);
+    dideliaisSmugiais++;
+}
+</script> -->
+
+
+</body>
+</html>
